@@ -71,15 +71,15 @@
             $date=$_POST['idate'];
       
   
-            $q="insert into grocerydb(Item_name,
+            $q="INSERT INTO grocerydb(Item_name,
             Item_Quantity,Item_status,Date)
-            values('$item_name',$item_qty,
+            VALUES('$item_name',$item_qty,
             '$item_status','$date')";
   
             mysqli_query($con,$q);
             header("location:index.php");
         }
-          
+          /*
         // if(!mysqli_query($con,$q))
         // {
             // echo "Value Not Inserted";
@@ -87,7 +87,7 @@
         // else
         // {
             // echo "Value Inserted";
-        // }
+        // } \*
     ?>
 </body>
   

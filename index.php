@@ -3,11 +3,11 @@
   
     if (isset($_POST['btn'])) {
         $date=$_POST['idate'];
-        $q="select * from grocerydb where Date='$date'";
+        $q="SELECT * FROM grocerydb WHERE Date='$date'";
         $query=mysqli_query($con,$q);
     } 
     else {
-        $q= "select * from grocerydb";
+        $q= "SELECT * FROM grocerydb";
         $query=mysqli_query($con,$q);
     }
 ?>

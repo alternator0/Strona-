@@ -34,45 +34,44 @@
   
 <body>
     <div class="container mt-5">
-        <h1>Update Grocery List</h1>
+        <h1>Zmiana Listy Zakupów</h1>
         <form method="post">
             <div class="form-group">
-                <label>Item name</label>
+                <label>Nazwa</label>
                 <input type="text" 
                     class="form-control" 
                     name="iname" 
-                    placeholder="Item name" 
-                    value=
-        "<?php echo $res['Item_name'];?>" />
+                    placeholder="Nazwa" 
+                    value="<?php echo $res['Item_name'];?>" />
             </div>
   
             <div class="form-group">
-                <label>Item quantity</label>
+                <label>Liczba</label>
                 <input type="text" 
                     class="form-control" 
                     name="iqty" 
-                    placeholder="Item quantity" 
-value="<?php echo $res['Item_Quantity'];?>" />
+                    placeholder="Liczba" 
+                    value="<?php echo $res['Item_Quantity'];?>" />
             </div>
   
             <div class="form-group">
-                <label>Item status</label>
+                <label>Status</label>
                 <select class="form-control" 
                     name="istatus">
                     <?php
                         if($res['Item_status'] == 0) {
                     ?>
-                    <option value="0" selected>PENDING</option>
-                    <option value="1">BOUGHT</option>
-                    <option value="2">NOT AVAILABLE</option>
+                    <option value="0" selected>OCZEKUJĄCE</option>
+                    <option value="1">KUPIONE</option>
+                    <option value="2">NIEDOSTĘPNE</option>
                     <?php } else if($res['Item_status'] == 1) { ?>
-                    <option value="0">PENDING</option>
-                    <option value="1" selected>BOUGHT</option>
-                    <option value="2">NOT AVAILABLE</option>
+                    <option value="0">OCZEKUJĄCE</option>
+                    <option value="1" selected>KUPIONE</option>
+                    <option value="2">NIEDOSTĘPNE</option>
                     <?php } else if($res['Item_status'] == 2) { ?>
-                    <option value="0">PENDING</option>
-                    <option value="1">BOUGHT</option>
-                    <option value="2" selected>NOT AVAILABLE</option>
+                    <option value="0">OCZEKUJĄCE</option>
+                    <option value="1">KUPIONE</option>
+                    <option value="2" selected>NIEDOSTĘPNE</option>
                     <?php
                         }
                     ?>
@@ -80,9 +79,9 @@ value="<?php echo $res['Item_Quantity'];?>" />
             </div>
   
             <div class="form-group">
-                <label>Date</label>
+                <label>Data</label>
                 <input type="date" class="form-control" 
-                    name="idate" placeholder="Date" 
+                    name="idate" placeholder="Data" 
                     value="<?php echo $res['Date']?>">
             </div>
   
