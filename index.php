@@ -50,7 +50,7 @@
                                 method="post">
                                 <input type="submit" 
                                 class="btn btn-danger float-right" 
-                                name="btn" value="filtruj">
+                                name="btn" value="Filtruj">
                             </div>
                         </form>
                     </div>
