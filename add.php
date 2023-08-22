@@ -19,7 +19,7 @@
                 <label>Nazwa</label>
                 <input type="text" 
                     class="form-control" 
-                    placeholder="Nazwa prduktu" 
+                    placeholder="Nazwa produktu" 
                     name="iname" />
             </div>
   
