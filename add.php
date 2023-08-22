@@ -19,7 +19,7 @@
                 <label>Nazwa</label>
                 <input type="text" 
                     class="form-control" 
-                    placeholder="Item name" 
+                    placeholder="Nazwa prduktu" 
                     name="iname" />
             </div>
   
@@ -27,7 +27,7 @@
                 <label>Liczba</label>
                 <input type="text" 
                     class="form-control" 
-                    placeholder="Item quantity" 
+                    placeholder="Liczba" 
                     name="iqty" />
             </div>
   
@@ -47,15 +47,15 @@
                 </select>
             </div>
             <div class="form-group">
-                <label>Date</label>
+                <label>Data</label>
                 <input type="date" 
                     class="form-control" 
-                    placeholder="Date" 
+                    placeholder="Data" 
                     name="idate">
             </div>
             <div class="form-group">
                 <input type="submit" 
-                    value="Add" 
+                    value="Dodaj" 
                     class="btn btn-danger" 
                     name="btn">
             </div>
