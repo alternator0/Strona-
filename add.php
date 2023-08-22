@@ -71,7 +71,7 @@
             $date=$_POST['idate'];
       
   
-            $q="insert into grocerytb(Item_name,
+            $q="insert into grocerydb(Item_name,
             Item_Quantity,Item_status,Date)
             values('$item_name',$item_qty,
             '$item_status','$date')";
