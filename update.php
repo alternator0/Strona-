@@ -7,8 +7,8 @@
         $istatus=$_POST['istatus'];
         $date=$_POST['idate'];
         $id = $_GET['id'];
-        $q= "update grocerydb set Item_name='$item_name', Item_Quantity='$item_qty', 
-        Item_status='$istatus', Date='$date' where Id=$id";
+        $q= "UPDATE grocerydb SET Item_name='$item_name', Item_Quantity='$item_qty', 
+        Item_status='$istatus', Date='$date' WHERE Id=$id";
         $query=mysqli_query($con,$q);
         header('location:index.php');
     } 
@@ -61,15 +61,15 @@
                     <?php
                         if($res['Item_status'] == 0) {
                     ?>
-                    <option value="0" selected>OCZEKUJĄCE</option>
+                    <option value="0" selected>OCZEKUJE</option>
                     <option value="1">KUPIONE</option>
                     <option value="2">NIEDOSTĘPNE</option>
                     <?php } else if($res['Item_status'] == 1) { ?>
-                    <option value="0">OCZEKUJĄCE</option>
+                    <option value="0">OCZEKUJE</option>
                     <option value="1" selected>KUPIONE</option>
                     <option value="2">NIEDOSTĘPNE</option>
                     <?php } else if($res['Item_status'] == 2) { ?>
-                    <option value="0">OCZEKUJĄCE</option>
+                    <option value="0">OCZEKUJE</option>
                     <option value="1">KUPIONE</option>
                     <option value="2" selected>NIEDOSTĘPNE</option>
                     <?php
@@ -86,7 +86,7 @@
             </div>
   
             <div class="form-group">
-                <input type="submit" value="Update" 
+                <input type="submit" value="Zmień" 
                     name="btn" class="btn btn-danger">
             </div>
         </form>

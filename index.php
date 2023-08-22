@@ -18,7 +18,7 @@
     <meta http-equiv="Content-Type" 
         content="text/html; charset=UTF-8">
   
-    <title>View List</title>
+    <title>Lista Zakupów</title>
   
     <link rel="stylesheet" href=
 "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -33,14 +33,14 @@
         <!-- top -->
         <div class="row">
             <div class="col-lg-8">
-                <h1>View Grocery List</h1>
-                <a href="add.php">Add Item</a>
+                <h1>Lista zakupów</h1>
+                <a href="add.php">Dodaj produkt</a>
             </div>
             <div class="col-lg-4">
                 <div class="row">
                     <div class="col-lg-8">
                           
-                        <!-- Date Filtering-->
+                        <!-- Filtrowanie -->
                         <form method="post" action="">
                             <input type="date" 
                                 class="form-control" 
@@ -58,7 +58,7 @@
             </div>
         </div>
   
-        <!-- Grocery Cards -->
+        <!-- Karty Produktów -->
         <div class="row mt-4">
             <?php
                 while ($qq=mysqli_fetch_array($query)) 
@@ -78,26 +78,26 @@
                         <?php
                         if($qq['Item_status'] == 0) {
                         ?>
-                        <p class="text-info">PENDING</p>
+                        <p class="text-info">OCZEKUJE</p>
   
                         <?php
                         } else if($qq['Item_status'] == 1) {
                         ?>
-                        <p class="text-success">BOUGHT</p>
+                        <p class="text-success">KUPIONE</p>
   
                         <?php } else { ?>
-                        <p class="text-danger">NOT AVAILABLE</p>
+                        <p class="text-danger">NIEDOSTĘPNE</p>
   
                         <?php } ?>
                         <a href=
                         "delete.php?id=<?php echo $qq['Id']; ?>" 
                             class="card-link">
-                            Delete
+                            Usuń
                         </a>
                         <a href=
                         "update.php?id=<?php echo $qq['Id']; ?>" 
                             class="card-link">
-                            Update
+                            Zmień
                         </a>
                     </div>
                 </div><br>

@@ -4,19 +4,19 @@
     <meta http-equiv="Content-Type" 
         content="text/html; charset=UTF-8">
   
-    <title>Add List</title>
+    <title>Dodawanie Do Listy</title>
   
     <link rel="stylesheet" href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+"https:maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
   
 <body>
     <div class="container mt-5">
-        <h1>Add Grocery List</h1>
+        <h1>Dodaj Produkt do Listy Zakupów</h1>
         <form action="add.php" method="POST">
             <div class="form-group">
-                <label>Item name</label>
+                <label>Nazwa</label>
                 <input type="text" 
                     class="form-control" 
                     placeholder="Item name" 
@@ -24,7 +24,7 @@
             </div>
   
             <div class="form-group">
-                <label>Item quantity</label>
+                <label>Liczba</label>
                 <input type="text" 
                     class="form-control" 
                     placeholder="Item quantity" 
@@ -32,17 +32,17 @@
             </div>
   
             <div class="form-group">
-                <label>Item status</label>
+                <label>Status</label>
                 <select class="form-control" 
                     name="istatus">
                     <option value="0">
-                        PENDING
+                        OCZEKUJE
                     </option>
                     <option value="1">
-                        BOUGHT
+                        KUPIONE
                     </option>
                     <option value="2">
-                        NOT AVAILABLE
+                        NIEDOSTĘPNE
                     </option>
                 </select>
             </div>
@@ -79,15 +79,6 @@
             mysqli_query($con,$q);
             header("location:index.php");
         }
-          /*
-        // if(!mysqli_query($con,$q))
-        // {
-            // echo "Value Not Inserted";
-        // }
-        // else
-        // {
-            // echo "Value Inserted";
-        // } \*
     ?>
 </body>
   
