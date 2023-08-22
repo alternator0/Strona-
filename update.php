@@ -7,14 +7,14 @@
         $istatus=$_POST['istatus'];
         $date=$_POST['idate'];
         $id = $_GET['id'];
-        $q= "update grocerytb set Item_name='$item_name', Item_Quantity='$item_qty', 
+        $q= "update grocerydb set Item_name='$item_name', Item_Quantity='$item_qty', 
         Item_status='$istatus', Date='$date' where Id=$id";
         $query=mysqli_query($con,$q);
         header('location:index.php');
     } 
     else if(isset($_GET['id'])) 
     {
-        $q = "SELECT * FROM grocerytb WHERE Id='".$_GET['id']."'";
+        $q = "SELECT * FROM grocerydb WHERE Id='".$_GET['id']."'";
         $query=mysqli_query($con,$q);
         $res= mysqli_fetch_array($query);
     }

@@ -7,7 +7,7 @@
         $query=mysqli_query($con,$q);
     } 
     else {
-        $q= "select * from grocerytb";
+        $q= "select * from grocerydb";
         $query=mysqli_query($con,$q);
     }
 ?>
