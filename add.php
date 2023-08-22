@@ -13,7 +13,7 @@
   
 <body>
     <div class="container mt-5">
-        <h1>Dodaj Produkt do Listy Zakupów</h1>
+        <h1>Dodaj produkt do listy zakupów</h1>
         <form action="add.php" method="POST">
             <div class="form-group">
                 <label>Nazwa</label>
