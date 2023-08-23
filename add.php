@@ -7,7 +7,7 @@
     <title>Dodawanie Do Listy</title>
   
     <link rel="stylesheet" href=
-"https:maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
   
@@ -64,7 +64,7 @@
   
     <?php
         if(isset($_POST["btn"])) {
-            include("connect.php");
+	    include("connect.php");
             $item_name=$_POST['iname'];
             $item_qty=$_POST['iqty'];
             $item_status=$_POST['istatus'];
