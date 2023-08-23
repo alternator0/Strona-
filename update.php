@@ -6,7 +6,7 @@
         $item_qty=$_POST['iqty'];
         $istatus=$_POST['istatus'];
         $date=$_POST['idate'];
-        $id = $_GET['Id'];
+        $id = $_GET['id'];
         $q= "UPDATE grocerydb SET Item_name='$item_name', Item_Quantity='$item_qty', 
         Item_status='$istatus', Date='$date' WHERE Id=$id";
         $query=mysqli_query($con,$q);
